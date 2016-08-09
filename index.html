@@ -15,7 +15,7 @@
     <li>
       <a href="#">Фото и видео</a>
     </li>
-      <li><div class="index-logo"><img src="#" alt="logo"></div></li>
+      <li><div class="index-logo"><img src="img/logo.png" alt="logo"></div></li>
       <li>
         <a href="#">Карта штата</a>
       </li>
@@ -50,25 +50,25 @@
             своя жизнь</p>
           </div>
 
-          <div class="info-img">!--<img src="#" alt="Фото города"> </div>
+          <div class="info-img"><img src="img/town-view.png" alt="Фото города"> </div>
         </section>
         <section class="horizontal">
           <div class="stuff">
-            <img src="#" alt="Дом">
+            <div class="house"></div>
             <b>Жилье</b>
             <p class="main-information">Рекомендуем пожить в настоящем мотеле,
                все как в кино!</p>
           </div>
 
           <div class="stuff">
-            <img src="#" alt="Еда">
+            <div class="food"></div>
             <b>Еда</b>
             <p class="main-information">Всегда заказывайте фирменный бургер,
             вы не разочаруетесь!</p>
           </div>
 
           <div class="stuff">
-            <img src="#" alt="Сувениры">
+            <div class="souvenirs"></div>
             <b>Сувениры</b>
             <p class="main-information">Не только китайского,
                но и местного производства</p>
@@ -78,7 +78,7 @@
 
 
         <section class="horizontal">
-          <div class="info-img"><img src="#" alt="Мост дьявола"> </div>
+          <div class="info-img"><img src="img/bridge-of-devil.png" alt="Мост дьявола"> </div>
 
           <div class="blue-background">
           <b>Там есть мост дьявола</b>
@@ -122,17 +122,47 @@
 
       </section>
 
-    <section class="map">
+    <section class="search">
+      <div class="search-header">
+        <h2>Заинтересовались?</h2>
+      <p class="main-information">
+        Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне
+      </p>
+      <button class="hotel-search-btn" type="button" name="hotel-search">Показать гостиницы</button>
+      </div>
+      <form class="search-form" action="" method="post">
+        Дата заезда <div class="date"><div class="date-icon"></div></div>
+        Дата выезда<div class="date"><div class="date-icon"></div></div>
+        Взрослые <div class="number-of-adults">
+          <div class="minus"></div>
+          <div class="number"></div>
+          <div class="plus"></div>
+        </div>
+        Дети <div class="number-of-children">
+          <div class="minus"></div>
+          <div class="number"></div>
+          <div class="plus"></div>
+        </div>
+        <button class="search-btn" type="button" name="search-btn">Найти</button>
+      </form> <!--Нужна ли форма вообще? -->
+      <div class="map">
 
+      </div>
     </section>
 
     </main>
     <footer>
-      <div></div>
-      
-      <div></div>
+      <div class="footer-hashtag">#Visitsedon</div> <!--Нужна ли здесь ссылка?-->
 
-      <div></div>
+      <div class="footer-social">
+        <a class="social-twitter" href="#">Twitter</a>
+        <a class="social-facebook" href="#">Facebook</a>
+        <a class="social-youtube" href="#">Youtube</a>
+      </div>
+
+      <div class="footer-developed-by">
+        Разработано: <img src="#" alt="html-logo" />
+      </div>
     </footer>
   </body>
 </html>
