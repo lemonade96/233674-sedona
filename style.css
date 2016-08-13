@@ -1,0 +1,65 @@
+/*Общие*/
+body {
+  font-family: PTSans, sans-serif;
+  font-size: 14pt;
+  color: black;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 30pt;
+  font-weight: bold;
+}
+h3 {
+  font-size: 21pt;
+  font-weight: bold;
+}
+.hashtag {
+  font-size: 21pt;
+  font-weight: bold;
+}
+
+/*Главная*/
+
+.advantages-1 {
+  background-color: #81b3d2;
+  color: white;
+}
+.advantages-2 {
+  background-color: #eeeeee;
+}
+.stuff {
+  background-color: white;
+}
+input[type="submit"] {
+  display: block;
+  background-color: #81b3d2;
+  color: white;
+}
+.show-hotels {
+  display: block;
+  background-color: #766357;
+  color: white;
+}
+a .active {
+  color: #7f6d62;
+}
+nav a {
+  color: black;
+}
+nav a:hover {
+  color: #81b3d2;
+}
+.searching-form {
+  display: none;
+}
+.map {
+  display: none;
+}
+
+/*Каталог*/
+.hotel-filter {
+  background-image: url(img/catalog/filter-background.jpg);
+}
+.selection span {
+  font-weight: bold;
+}
