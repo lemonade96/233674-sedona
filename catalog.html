@@ -3,44 +3,49 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <title>Каталог</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
      <div class="container">
        <nav class="main-nav">
           <ul>
-            <li><a href="index.html">Информация</li>
-            <li><a href="#">Фото и видео</a></li>
             <li>
-              <div class="header-logo-image">
-              <a href="index.html"><img src="img/for-all/logo.svg" alt="логотип"></a>
-              </div>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+              <a href="index.html">Информация</a>
+            </li
+            ><li>
+              <a href="#">Фото и видео</a>
+            </li
+            ><li>
+                <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="11.5%" height="70px"></a>
+            </li
+            ><li>
+              <a href="#">Карта штата</a>
+            </li
+            ><li>
+              <a class="active" href="catalog.html">Гостиницы</a>
+            </li>
           </ul>
         </nav>
      </div>
     </header>
 
-    <main>
-      <section class="hotel-filter">
-        <section class="features">
+    <main class="container">
+      <section class="hotel-filter clearfix">
+       <form action="#">
+        <section class="features-check">
           <span>Инфраструктура:</span> 
-            <form action="#">
-              <input class="checkbox"id="pool" type="checkbox" name="pool"  checked><label for="pool">Бассейн</label>
-		      <input class="checkbox" id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
-			  <input class="checkbox"id="wifi" type="checkbox" name="wifi"><label for="wifi">Wi-Fi</label>
-            </form>
+            <input class="checkbox"id="pool" type="checkbox" name="pool"  checked><label for="pool">Бассейн</label>
+		    <input class="checkbox" id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
+		    <input class="checkbox"id="wifi" type="checkbox" name="wifi"><label for="wifi">Wi-Fi</label>
         </section>
-            <section class="type-of-house">
-              <span>Тип жилья:</span>
-              <form action="#">
-               	<input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
-				<input class="checkbox" id="motel"  type="checkbox" name="motel" checked><label for="motel">Мотель</label>
-				<input class="checkbox" id="apartament" type="checkbox" name="apartament" ><label for="apartament">Апартаменты</label>
-              </form>
-            </section>
+        <section class="features-check">
+          <span>Тип жилья:</span>
+            <input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
+			<input class="checkbox" id="motel"  type="checkbox" name="motel" checked><label for="motel">Мотель</label>
+			<input class="checkbox" id="apartament" type="checkbox" name="apartament" ><label for="apartament">Апартаменты</label>
+        </section>
         
         <section class="price-choice">
           <span>Стоимость в сутки (р):</span>
@@ -54,8 +59,11 @@
           </div>
           <label>от <input class="min-price" type="text" value="0"></label>
           <label>до <input class="max-price" type="text" value="3000"></label>
+          <input class="btn" type="submit" value="Показать">
         </section>
+        </form>
       </section>
+      
       
       <section class="catalog-header">
         <section class="number-of">
@@ -82,8 +90,9 @@
           <div class="catalog-item-info">
             <a href="#">
               <h3>Amara resort &#38; spa</h3>
+            </a>  
               <span class="type">Гостиница</span>
-            </a>
+            
           <span>от <span class="price">3500</span> р.</span>
             <a class="more-info-btn" href="#">Подробнее</a>
             <a class="book-btn" href="#">Заказать</a>
@@ -105,8 +114,8 @@
           <div class="catalog-item-info">
             <a href="#">
               <h3>Desert Quail Inn</h3>
+            </a>  
               <span class="type">Мотель</span>
-            </a>
             <span>от <span class="price">2000</span> р.</span>
             <a class="more-info-btn" href="#">Подробнее</a>
             <a class="book-btn" href="#">Заказать</a>
@@ -127,8 +136,9 @@
           <div class="catalog-item-info">
             <a href="">
               <h3>Villas at Poco Diablo</h3>
-              <span class="type">Апартаменты</span>
             </a>
+              <span class="type">Апартаменты</span>
+            
           
             <span>от <span class="price">4000</span> р.</span>
             <a class="more-info-btn" href="#">Подробнее</a>
@@ -150,7 +160,7 @@
     </main>
 
     <footer>
-      <div class="footer-hashtag">#Visitsedon</div> 
+      <div class="footer-hashtag">#Visitsedona</div> 
 
       <div class="footer-social">
         <a class="social-twitter" href="#">Twitter</a>
@@ -160,7 +170,7 @@
 
       <div class="footer-developed-by">
         <span>Website by:</span>
-        <img src="#" alt="html-logo" />
+        <img src="/img/for-all/html-logo.png" alt="html-logo" />
        
       </div>
     </footer>
