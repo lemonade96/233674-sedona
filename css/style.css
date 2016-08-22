@@ -24,7 +24,7 @@ ol, ul {
   box-sizing: border-box;
   min-width: 768px;
   max-width: 1200px;
-  background-color: white;  
+  background-color: white; 
 }
 
 
@@ -186,35 +186,68 @@ a.index-logo {
 
 footer {
   width: 100%;
-  padding-top: 45px;
   background-color: white;
   height: 120px;
+  text-align: center;
   
 }
 
 .index-footer {
-  position: relative;
+  position: absolute;
+  
   z-index: 5;
 }
 
 .footer-hashtag {
+  margin-top: 50px;
+  float: left;
   font-size: 21px;
   font-weight: bold;
   width: 33.333%;
   height: auto;
-  float: left;
+  
 }
 .footer-social {
+  float: left;
+  margin-top: 35px;
   width: 33.333%;
   height: auto;
-  float:left;
+  
 }
-
+.social {
+  display: inline-block;
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  background-color: #81b3d2;
+}
+.twitter {
+  margin: 17px 15px;
+  width: 17px;
+  height: 15px;
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -229px -106px;
+}
+.facebook {
+  margin: 14px 17px;
+  width: 10px;
+  height: 19px;
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -10px -52px;
+}
+.youtube {
+  margin: 15px 14px;
+  width: 20px;
+  height: 16px;
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -266px -106px;
+}
 .footer-website-by {
+  float: left;
+  margin-top: 35px;
   font-size: 14px;
   width: 33.333%;
   height: auto;
-  float:left;
 }
 .footer-website-by img {
   vertical-align: middle;  
@@ -468,6 +501,7 @@ calendar {
 
 /*Каталог*/
 
+
 .hotel-filter {
   margin-bottom: 30px;
   width: 100%;
@@ -489,9 +523,7 @@ calendar {
   margin-top: 15px;
   width: 100%;
 }
-.selection span {
-  font-weight: bold;
-  }
+
 .features-check {
   width: 20%;
   float: left;
@@ -534,24 +566,49 @@ label {
   font-weight: bold;
 }
 .selection {
+  float: left;
   margin-left: 45px;
-  height: auto;
+  width: 390x;
+}
+.selection span{
+  margin-right: 35px;
+  font-size: 12px;
+}
 
-  width: 365px;
+.selection a {
+  margin-right: 30px;
+  border-bottom: 1px dashed #81b3d2;
+  font-size: 12px;
+  color: #cccccc;
+}
+a.select-active {
+  color: #81b3d2;
+  border: none;
 }
 .arrows {
- 
+  float: right;
   width: 40px;
   height: 20px;
+}
+.arrows span {
+  font-size: 12px;
+  color: #cccccc;
+}
+.arrows span:hover {
+  color: black;
+}
+.arrows span:active,
+span.active-arrow {
+  color: #81b3d2;
 }
 .catalog-body {
   width: 100%
 }
 .catalog-item {
-  padding-left: 6%;
-  padding-right: 6%;
+  padding: 30px 6%;
   width: 88%;
-  height: 150px;
+  height: 90px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .catalog-item img {
   float: left;
@@ -562,51 +619,59 @@ label {
 .catalog-item-info {
   float: left;
   margin-left: 25px;
-  width: 260px;
-  height: auto;
+  width: auto;
 }
-
 .type {
-  display: block;
   float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .price-field {
-  display: inline-block;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 35px;
 }
 .info-btn {
+  float: left;
   width: 110px;
-  height: 20px;
+  height: 25px;
+  
 }
 .book-btn {
+  float: right;
+  margin-left: 7px;
   width: 145px;
-  height: 20px;
+  height: 25px;
 }
 
 .stars {
-  float: right;
   min-width: 15px;
-  height: 30px;
+  height: 30px; 
+  text-align: right;
+}
+.stars span {
+
+  color: 81b3d2;
 }
 .rating {
   float: right;
-  width: 150px;
-  height: 30px;
+}
+.rating-score {
+  margin-top: 41px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: 90px;
+  height: 20px;
   background-color: #f2f2f2;
   color: #666666;
+} 
 }
 .rating span {
-  display: inline-block;
   vertical-align: middle;
 }
-.catalog-item [class$="btn"]:first-child {
-  display: inline-block;
-  width: 115px;
-  height: 25px;
-}
-.catalog-item [class$="btn"]:last-child {
-  display: inline-block;
-  width: 145px;
-  height: 25px;
-}
+
 
 
