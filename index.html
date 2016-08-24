@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
     <title>Welcome to Sedona</title>
   </head>
   <body>
+   <div class="shadow">
     <header class="main-header clearfix">
      <div class="container">
        <nav class="main-nav clearfix">
@@ -22,9 +23,9 @@
                 <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="138" height="70"></a>
             </li>
             <li>
-              <a href="#">Карта штата</a>
+              <a href="#map">Карта штата</a>
             </li>
-             <li>
+            <li>
               <a href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -37,7 +38,7 @@
       <img class="georgeous" src="img/index/to-the-gorgeous.png" width="165" height="30" alt=""/>
       <img class="sedona" src="img/index/Sedona.png" width="456" height="78" alt=""/>
       <img class="canyon" src="img/index/canyon-sucks.png" width="296" height="80" alt=""/>
-      <img class="mask" src="img/index/mask.png" width="100%" height="57" alt=""/>
+      <img class="mask" src="img/index/mask.png" width="1200" height="57" alt=""/>
       </div>
       <section class="index-row1">
         <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -105,14 +106,14 @@
                  и толпится там</p>
                  </div>
         </section>
-        <section class="search">
           <div class="search-header">
             <h2>Заинтересовались?</h2>
             <p> Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
-
-          </div>
-          <div class="searching-form">
             <a class="btn brown-btn search-btn" href="#">Поиск гостиницы в Седоне</a>
+          </div>
+          
+        <div class="map">
+        <div class="searching-form">
             <form action="#">
               <label for="first-day">Дата заезда:</label>
               <input id="first-day" type="text">
@@ -122,35 +123,36 @@
               <input id="last-day" type="text">
               <div class="calendar" id="calendar-last-day"></div>
               
-              <label for="adults">Взрослые:</label>
-              <input id="adults" type="text">
+                <label class="half-input" for="adults">Взрослые:</label>
+                <input id="adults" type="text">
+               
               
-              <label for="children">Дети:</label>
-              <input id="children" type="text">
+                <label class="half-input" for="children">Дети:</label>
+                <input id="children" type="text">
+            
               <input class="btn blue-btn index-submit" type="submit" value="Найти">
             </form>
           </div>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11010.679395195686!2d-111.77294764164208!3d34.86892520473586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1470993891317" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>   
-          </div>      
-        </section>
+          
+        <a name="map"></a>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11010.679395195686!2d-111.77294764164208!3d34.86892520473586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1470993891317" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>   
+        </div>     
+        
     </main>
-    <footer class="container index-footer clearfix">
-      <div class="footer-hashtag">#Visitsedona</div> 
+      <footer class="container index-footer clearfix">
+        <div class="footer-hashtag">#Visitsedona</div> 
+        <div class="footer-social">
+          <a class="social-btn blue-btn twitter" href="#"></a>
+          <a class="social-btn blue-btn facebook" href="#"></a>
+          <a class="social-btn blue-btn youtube" href="#"></a>
+        </div>
 
-      <div class="footer-social">
-        <a class="social" href="#"><div class="twitter"></div></a>
-        <a class="social" href="#"><div class="facebook"></div></a>
-        <a class="social" href="#"><div class="youtube"></div></a>
-      </div>
-
-      <div class="footer-website-by">
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru">
-        <img src="img/for-all/html-logo.png" alt="html-logo" />
-        </a>
-       
-      </div>
-    </footer>
+        <div class="footer-website-by">
+          <span>Website by</span>
+          <a class="html-logo" href="https://htmlacademy.ru">
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

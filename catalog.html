@@ -8,63 +8,63 @@
       <title>Каталог</title>
     </head>
     <body>
-      <header class="main-header">
-       <div class="container">
-         <nav class="main-nav">
-            <ul>
-              <li>
-                <a href="index.html">Информация</a>
-              </li
-              ><li>
-                <a href="#">Фото и видео</a>
-              </li
-              ><li>
-                  <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="11.5%" height="70px"></a>
-              </li
-              ><li>
-                <a href="#">Карта штата</a>
-              </li
-              ><li>
-                <a class="active" href="catalog.html">Гостиницы</a>
-              </li>
-            </ul>
-          </nav>
-       </div>
-      </header>
+    <header class="main-header clearfix">
+     <div class="container">
+       <nav class="main-nav clearfix">
+          <ul class="clearfix">
+            <li>
+              <a href="index.html">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+                <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="138" height="70"></a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+             <li>
+              <a class="active">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+     </div>
+    </header>
 
       <main class="container catalog-main">
         <section class="hotel-filter clearfix">
-         <form class="catalog-form clearfix" action="#" method="post">
-          <section class="features-check">
-            <span>Инфраструктура:</span> 
-              <input class="checkbox"id="pool" type="checkbox" name="pool"  checked><label for="pool">Бассейн</label>
-              <input class="checkbox" id="parking" type="checkbox" name="parking"><label for="parking">Парковка</label>
-              <input class="checkbox"id="wifi" type="checkbox" name="wifi"><label for="wifi">Wi-Fi</label>
-          </section>
-          <section class="features-check">
-            <span>Тип жилья:</span>
-              <input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
-              <input class="checkbox" id="motel"  type="checkbox" name="motel" checked><label for="motel">Мотель</label>
-              <input class="checkbox" id="apartament" type="checkbox" name="apartament" ><label for="apartament">Апартаменты</label>
-          </section>
+           <form class="catalog-form clearfix" action="#" method="post">
+            <section class="features-check">
+              <span>Инфраструктура:</span> 
+                <input class="checkbox" id="pool" type="checkbox" name="pool"  checked><label for="pool">Бассейн</label>
+                <input class="checkbox" id="parking" type="checkbox" name="parking"><label class="check-blocked" for="parking">Парковка</label>
+                <input class="checkbox" id="wifi" type="checkbox" name="wifi"><label class="check-blocked" for="wifi">Wi-Fi</label>
+            </section>
+            <section class="features-check">
+              <span>Тип жилья:</span>
+                <input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
+                <input class="checkbox" id="motel"  type="checkbox" name="motel" checked><label for="motel">Мотель</label>
+                <input class="checkbox" id="apartament" type="checkbox" name="apartament" ><label class="check-blocked" for="apartament">Апартаменты</label>
+            </section>
 
-          <section class="price-choice">
-            <span>Стоимость в сутки (р):</span>
-            <div class="click-choice">
-              <div class="unacceptable"></div>
-              <button class="circle-btn" type="button" name="choice-btn-one"></button>
-              <div class="acceptable">
-              <button class="circle-btn" type="button" name="choice-btn-two"></button>
+            <section class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label><!--
+                --><label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
-              <div class="unacceptable"></div>
-            </div>
-            <label>от <input class="min-price" type="text" value="0"></label>
-            <label>до <input class="max-price" type="text" value="3000"></label>
-            <input class="btn" type="submit" value="Показать">
-          </section>
+              <div class="range-controls">
+                <div class="scale">
+                <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </section>
           </form>
         </section>
-
 
         <section class="catalog-header">
           <section class="number-of clearfix">
@@ -130,16 +130,17 @@
                 <a class="btn blue-btn info-btn" href="#">Подробнее</a>
                 <a class="btn brown-btn book-btn" href="#">Заказать</a>
               </div>
-              </div>
-            <div class="rating">
-            <div class="stars">
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
             </div>
-            <div class="rating-score">
-              <span>Рейтинг:</span>
-              <span class="hotel-rating">8.9</span>
+            <div class="rating">
+              <div class="stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
               </div>
+              <div class="rating-score">
+                <span>Рейтинг:</span>
+                <span class="hotel-rating">8.9</span>
+              </div>
+            </div>
           </article>
 
 
@@ -159,15 +160,16 @@
               </div>
             </div>
             <div class="rating">
-            <div class="stars">
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-              <span class="icon-star"></span>
-            </div>
-            <div class="rating-score">
-              <span>Рейтинг:</span>
-              <span class="hotel-rating">9.2</span>
+              <div class="stars">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
               </div>
+              <div class="rating-score">
+                <span>Рейтинг:</span>
+                <span class="hotel-rating">9.2</span>
+              </div>
+            </div>
           </article>
 
         </section>
@@ -176,17 +178,17 @@
 
     <footer class="container clearfix">
       <div class="footer-hashtag">#Visitsedona</div> 
-
       <div class="footer-social">
-        <a class="social" href="#"><div class="twitter"></div></a>
-        <a class="social" href="#"><div class="facebook"></div></a>
-        <a class="social" href="#"><div class="youtube"></div></a>
+        <a class="social-btn blue-btn twitter" href="#"></a>
+        <a class="social-btn blue-btn facebook" href="#"></a>
+        <a class="social-btn blue-btn youtube" href="#"></a>
       </div>
+
       <div class="footer-website-by">
         <span>Website by</span>
-        <a href="https://htmlacademy.ru">
-        <img src="img/for-all/html-logo.png" alt="html-logo" />
+        <a class="html-logo" href="https://htmlacademy.ru">
         </a>
+      </div>
        
       </footer>
 
