@@ -185,9 +185,6 @@ a.index-logo {
   height: 70px;
 }
 
-.search header {
-  line-height: 24px;
-}
 /*Footer*/
 
 footer {
@@ -515,7 +512,7 @@ footer {
 
 .search-header {
   width: 100%;
-  height: 163px;
+  height: 193px;
 }
 .search-header h2 {
   margin-top: 60px;
@@ -524,6 +521,7 @@ footer {
 }
 .search-header p {
   width: 450px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -552,7 +550,7 @@ footer {
 
 .searching-form { 
   position: absolute;
-  top: 0;
+  top: -70px;
   left: 50%;
   transform: translate(-50%, 0%);
   width: 576px;
@@ -562,25 +560,40 @@ footer {
   box-shadow: 0 0 10px 0 #c8c8c8;
 }
 .searching-form label {
-  display: block;
-  margin-left: 45px;
-  margin-bottom: 30px;
+  display: inline-block;
   width: 100px;
 }
-.half-input + input{
-  width: 50px;
+.half-width-input {
+  display: inline-block;
+  width: 215px;
+  margin: 0;
+}
+.half-width-input input {
+  position: relative;
+  width: 110px;
   height: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #f2f2f2;
+  border: none;
 }
 
-.half-input + input::before{
-  width: 35px;
-  height: 35px;
-  background:
-    url(../img/for-all/spritesheet.png) -173px -273px no-repeat,
-    #f2f2f2;
+.half-width-input label::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -173px -273px;
 }
-.half-input {
-  display: inline-block;
+
+.half-width-input::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -173px -316px;
 }
 
 .index-submit {
@@ -606,6 +619,10 @@ calendar {
   width: 100%;
   height: 600px;
 
+}
+iframe {
+  width: 100%;
+  height: 600px;
 }
 
 
