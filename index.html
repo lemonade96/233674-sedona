@@ -23,7 +23,7 @@
                 <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="138" height="70"></a>
             </li>
             <li>
-              <a href="#map">Карта штата</a>
+              <a href="#">Карта штата</a>
             </li>
             <li>
               <a href="catalog.html">Гостиницы</a>
@@ -109,11 +109,11 @@
           <div class="search-header">
             <h2>Заинтересовались?</h2>
             <p> Укажите предполагаемые даты поездки, и мы покажем лучшие предложения гостиниц в Седоне</p>
-            <a class="btn brown-btn search-btn" href="#">Поиск гостиницы в Седоне</a>
           </div>
           
         <div class="map">
         <div class="searching-form">
+           <a class="btn brown-btn search-btn" href="#">Поиск гостиницы в Седоне</a>
             <form action="#">
               <label for="first-day">Дата заезда:</label>
               <input id="first-day" type="text">
@@ -122,14 +122,14 @@
               <label for="last-day">Дата выезда:</label>
               <input id="last-day" type="text">
               <div class="calendar" id="calendar-last-day"></div>
-              
-                <label class="half-input" for="adults">Взрослые:</label>
+              <div class="half-width-input">
+                <label for="adults">Взрослые:</label>
                 <input id="adults" type="text">
-               
-              
-                <label class="half-input" for="children">Дети:</label>
+              </div>
+              <div class="half-width-input">
+                <label for="children">Дети:</label>
                 <input id="children" type="text">
-            
+              </div>
               <input class="btn blue-btn index-submit" type="submit" value="Найти">
             </form>
           </div>
