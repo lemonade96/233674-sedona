@@ -154,6 +154,10 @@ a:active {
 .main-nav {
   background-color: white;
 }
+.main-nav ul {
+  padding-left: 6%;
+  padding-right: 6%;
+}
 
 .main-nav li{
   float: left;
@@ -163,14 +167,25 @@ a:active {
 
 .main-nav a { 
   display: block;
-  margin: 14px auto;
-  width: auto;
   font-weight: bold;
   line-height: 26px;
-  text-align: center;
 }
-.main-nav li:nth-child(4),
-.main-nav li:nth-child(5) {
+.main-nav li:first-child a {
+  margin: 14px 0;
+  text-align: left;
+}
+.main-nav li:nth-child(2) a {
+  margin: 14px auto;
+  width: 70%;
+  text-align: left;
+}
+.main-nav li:nth-child(4) a {
+  margin: 14px auto;
+  width: 70%;
+  text-align: right;
+}
+.main-nav li:last-child a {
+  margin: 14px 0;
   text-align: right;
 }
 
@@ -346,7 +361,7 @@ footer {
   height: 508px;
   background-color: #32424c;
   background:
-    url(../img/index/head-image.jpg) 0 20% no-repeat;
+    url(../img/index/head-image.jpg) 0 -56px no-repeat;
   margin-bottom: 59px;
   border-top: 1px solid transparent;
 }
@@ -477,7 +492,7 @@ footer {
 }
 
 .stuff h3 {
-  margin: 25px auto;
+  margin: 26px auto;
   margin-top: 160px;
   width: 70%;
 }
@@ -512,7 +527,7 @@ footer {
   content: "";
   position: absolute;
   top: 61px;
-  left: 50%;
+  left: 52%;
   margin-left: -38px; 
   width: 64px;
   height: 76px;
@@ -523,33 +538,33 @@ footer {
 
 .search-header {
   width: 100%;
-  height: 193px;
+  height: 232px;
 }
 .search-header h2 {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   text-align: center;
 }
 .search-header p {
   width: 450px;
-  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 22px;
   text-align: center;
 }
 .search-btn {
   margin: 0 auto;
   padding-left: 130px;
   padding-right: 130px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: block;
-  width: 316px;
-  height: 20px;
+  width: 310px;
+  height: 25px;
   line-height: 26px;
   font-size: 21px;
   background-color: #766357;
-  color: white;  
+  color: #ffffff;
 }
 
 .search {
@@ -561,56 +576,89 @@ footer {
 
 .searching-form { 
   position: absolute;
-  top: -70px;
+  top: -85px;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 576px;
-  height: 400px;
+  width: 570px;
+  height: 480px;
   background-color: white;
   z-index: 5;
   box-shadow: 0 0 10px 0 #c8c8c8;
 }
+.searching-form form {
+}
 .searching-form input[type="text"] {
   background-color: #f2f2f2;
-  border: none;
-  padding-right: 30px;
+  outline: none;
 }
 .searching-form label {
   display: inline-block;
+  vertical-align: middle;
   width: 100px;
   font-weight: bold;
+}
+
+.full-width-input:first-child {
+  position: relative;
+  margin-top: 57px;
+  margin-left: 58px;
+}
+.full-width-input:nth-child(2) {
+  position: relative;
+  margin-top: 32px;
+  margin-left: 57px;
+}
+.full-width-input input {
+  width: 308px;
+  height: 35px;
+  padding-right: 35px;
+  margin-left: 10px;
 }
 .half-width-input {
   display: inline-block;
   width: 215px;
+  margin-left: 51px;
+  margin-top: 34px;
   margin: 0;
 }
+
+.half-width-input:first-child {
+    margin-top: 34px;
+    margin-left: 55px;
+}
 .half-width-input input {
-  position: relative;
+  display: inline-block;
+  vertical-align: middle;
   width: 60px;
   height: 35px;
-  padding-left: 35px;
-  padding-right: 35px;
   background-color: #f2f2f2;
-  border: none;
+  
 }
-
-.half-width-input label::before {
-  content: "";
-  position: absolute;
+.form-calc {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+}
+.minus {
   width: 11px;
   height: 11px;
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -173px -273px;
+  margin: 50% 50%;
+  transform: translate(-50%,-50%);
 }
 
-.half-width-input label::after {
-  content: "";
-  position: absolute;
+.plus {
   width: 11px;
   height: 11px;
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -173px -316px;
+  margin: 50% 50%;
+  transform: translate(-50%,-50%);
 }
 
 .index-submit {
@@ -628,7 +676,10 @@ footer {
   margin-top: 51px;  
 }
 
-.calendar {
+label.calendar {
+  position: absolute;
+  top: 7px;
+  right: 65px;
   display: inline-block;
   width: 21px;
   height: 22px;
