@@ -581,11 +581,13 @@ footer {
   transform: translate(-50%, 0%);
   width: 570px;
   height: 480px;
+}
+.index-form {
+  display: none;
+  padding: 54px;
   background-color: white;
   z-index: 5;
-  box-shadow: 0 0 10px 0 #c8c8c8;
-}
-.searching-form form {
+  box-shadow:  0px 5px 22px 1px #b5b9bc;
 }
 .searching-form input[type="text"] {
   background-color: #f2f2f2;
@@ -594,47 +596,63 @@ footer {
 .searching-form label {
   display: inline-block;
   vertical-align: middle;
-  width: 100px;
+  width: auto;
   font-weight: bold;
 }
 
 .full-width-input:first-child {
   position: relative;
-  margin-top: 57px;
-  margin-left: 58px;
+  margin-left: 4px;
+  margin-top: 3px;
+}
+.full-width-input label{
+  margin-right: 13px;
 }
 .full-width-input:nth-child(2) {
   position: relative;
-  margin-top: 32px;
-  margin-left: 57px;
+  margin-top: 29px;
+  margin-left: 2px;
+  margin-bottom: 33px;
 }
 .full-width-input input {
-  width: 308px;
-  height: 35px;
+  width: 295px;
+  height: 37px;
   padding-right: 35px;
+  padding-left: 14px;
   margin-left: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .half-width-input {
   display: inline-block;
-  width: 215px;
+  width: auto;
   margin-left: 51px;
   margin-top: 34px;
   margin: 0;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.half-width-input:first-child {
-    margin-top: 34px;
-    margin-left: 55px;
-}
+
 .half-width-input input {
   display: inline-block;
   vertical-align: middle;
-  width: 60px;
+  width: 39px;
   height: 35px;
   background-color: #f2f2f2;
   
 }
+.label-adults {
+  margin-right: 45px;
+}
+
+.label-children {
+    margin-left: 52px;
+    margin-right: 30px;
+}
 .form-calc {
+  position: relative;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -644,21 +662,41 @@ footer {
   border: 2px solid transparent;
 }
 .minus {
-  width: 11px;
-  height: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 3px;
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -173px -273px;
-  margin: 50% 50%;
   transform: translate(-50%,-50%);
+}
+.minus:hover {
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -277px -273px;
+}
+.minus:active{
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -225px -273px;
 }
 
 .plus {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 11px;
   height: 11px;
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -173px -316px;
-  margin: 50% 50%;
   transform: translate(-50%,-50%);
+}
+.plus:hover{
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -275px -316px;
+}
+.plus:active{
+  background-image: url(../img/for-all/spritesheet.png);
+  background-position: -224px -316px;
 }
 
 .index-submit {
@@ -673,13 +711,13 @@ footer {
   border-style: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 51px;  
+  margin-top: 56px;  
 }
 
 label.calendar {
   position: absolute;
   top: 7px;
-  right: 65px;
+  right: -2px;
   display: inline-block;
   width: 21px;
   height: 22px;
@@ -716,10 +754,10 @@ iframe {
 
 
 .hotel-filter {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   width: 100%;
-  height: 210px;
-  padding: 30px 0;
+  height: 170px;
+  padding: 26px 0;
   padding-bottom: 20px;
   background-color: #263940;
   background-image: url(../img/catalog/filter-background.jpg);
@@ -733,21 +771,20 @@ iframe {
   font-size: 16px;
 }
 .catalog-form {
-  margin-top: 15px;
   width: 100%;
 }
 
 .features-check {
   width: 20%;
   float: left;
-  margin: 0 4%;
+  margin-left: 5%;
 }
 input[type="checkbox"] {
   display: none;
 }
 .features-check label {
   display: block;
-  margin: 30px 0;
+  margin: 25px 0;
   padding-left: 35px;
   position: relative;
   cursor: pointer;
@@ -770,6 +807,7 @@ input[type="checkbox"]:checked + label::before {
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -265px -20px;
 }
+.check-blocked,
 .check-blocked::before {
   opacity: 0.5;
 }
@@ -925,8 +963,9 @@ label {
   padding-left: 6%;
   padding-right: 6%;
   width: 88%;
-  height: 90px;
-  text-align: justify;
+  height: 53px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
 }
 .number-of {
   float: left;
@@ -939,7 +978,6 @@ label {
 }
 
 .number-of span {
-  float: right;
   font-size: 21px;
   font-weight: bold;
 }
@@ -996,8 +1034,12 @@ span.active-arrow {
 
 .catalog-item-info {
   float: left;
-  margin-left: 25px;
+  margin-left: 34px;
   width: auto;
+}
+.catalog-item-info a{
+  margin-bottom: -9px;
+  display: block;
 }
 .type {
   float: left;
@@ -1052,5 +1094,17 @@ span.active-arrow {
   vertical-align: middle;
 }
 
-
-
+/*Animation*/
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.form-appear {
+  display: block;
+  animation-name: appear;
+  animation-duration: 2s;
+}
