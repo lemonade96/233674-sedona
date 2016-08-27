@@ -114,27 +114,27 @@
         <div class="map">
         <div class="searching-form">
            <a class="btn brown-btn search-btn" href="#">Поиск гостиницы в Седоне</a>
-            <form action="#">
+            <form class="index-form" action="#">
               <div class="full-width-input"><!--
                 --><label for="first-day">Дата заезда:</label><!--
-                --><input id="first-day" type="text"><!--
+                --><input id="first-day" type="text" value="24 апреля 2016"><!--
                 --><label class="calendar" id="calendar-first-day"></label>
               </div>
               <div class="full-width-input"><!--
               --><label for="last-day">Дата выезда:</label><!--
-              --><input id="last-day" type="text"><!--
+              --><input id="last-day" type="text" value="4 июля 2016"><!--
               --><label class="calendar" id="calendar-last-day"></label>
               </div>
               <div class="half-width-input">
-                <label for="adults">Взрослые:</label><!--
+                <label class="label-adults" for="adults">Взрослые:</label><!--
                 --><div class="form-calc"><div class="minus"></div></div><!--
-                --><input id="adults" type="text"><!--
+                --><input id="adults" type="text" value="2"><!--
                 --><div class="form-calc"><div class="plus"></div></div>
               </div>
               <div class="half-width-input">
-                <label for="children">Дети:</label><!--
+                <label class="label-children" for="children">Дети:</label><!--
                 --><div class="form-calc"><div class="minus"></div></div><!--
-                --><input id="children" type="text"><!--
+                --><input id="children" type="text" value="0"><!--
                 --><div class="form-calc"><div class="plus"></div></div>
               </div>
               <input class="btn blue-btn index-submit" type="submit" value="Найти">
@@ -161,5 +161,13 @@
         </div>
       </footer>
     </div>
+    <script>
+      var form = document.querySelector(".searching-form form"),
+          button = document.querySelector(".search-btn");
+        button.addEventListener("click", function(element) {
+        element.preventDefault();
+        form.classList.toggle("form-appear");
+      });
+    </script>
   </body>
 </html>
