@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
     <title>Welcome to Sedona</title>
   </head>
@@ -114,27 +114,27 @@
         <div class="map">
         <div class="searching-form">
            <a class="btn brown-btn search-btn" href="#">Поиск гостиницы в Седоне</a>
-            <form class="index-form" action="#">
+            <form class="index-form form-disappear" action="#">
               <div class="full-width-input"><!--
                 --><label for="first-day">Дата заезда:</label><!--
-                --><input id="first-day" type="text" value="24 апреля 2016"><!--
+                --><input id="first-day" type="text" placeholder="24 апреля 2016"><!--
                 --><label class="calendar" id="calendar-first-day"></label>
               </div>
               <div class="full-width-input"><!--
               --><label for="last-day">Дата выезда:</label><!--
-              --><input id="last-day" type="text" value="4 июля 2016"><!--
+              --><input id="last-day" type="text" placeholder="4 июля 2016"><!--
               --><label class="calendar" id="calendar-last-day"></label>
               </div>
               <div class="half-width-input">
                 <label class="label-adults" for="adults">Взрослые:</label><!--
                 --><div class="form-calc"><div class="minus"></div></div><!--
-                --><input id="adults" type="text" value="2"><!--
+                --><input id="adults" type="text" placeholder="2"><!--
                 --><div class="form-calc"><div class="plus"></div></div>
               </div>
               <div class="half-width-input">
                 <label class="label-children" for="children">Дети:</label><!--
                 --><div class="form-calc"><div class="minus"></div></div><!--
-                --><input id="children" type="text" value="0"><!--
+                --><input id="children" type="text" placeholder="0"><!--
                 --><div class="form-calc"><div class="plus"></div></div>
               </div>
               <input class="btn blue-btn index-submit" type="submit" value="Найти">
@@ -161,13 +161,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      var form = document.querySelector(".searching-form form"),
-          button = document.querySelector(".search-btn");
-        button.addEventListener("click", function(element) {
-        element.preventDefault();
-        form.classList.toggle("form-appear");
-      });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
