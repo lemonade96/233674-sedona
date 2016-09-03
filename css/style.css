@@ -1,4 +1,4 @@
-/*Common*/
+/*General*/
 * {
   margin: 0;
   border: 0;
@@ -6,7 +6,7 @@
 }
 body {
   position: relative;
-  font-family: 'PT Sans', 'Tahoma', sans-serif;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -176,7 +176,7 @@ a:active {
 }
 .main-nav li:nth-child(2) a {
   margin: 14px auto;
-  width: 70%;
+  width: 78%;
   text-align: left;
 }
 .main-nav li:nth-child(4) a {
@@ -640,6 +640,7 @@ footer {
   vertical-align: middle;
   width: 39px;
   height: 35px;
+  text-align: center;
   background-color: #f2f2f2;
   
 }
@@ -1069,11 +1070,11 @@ span.active-arrow {
 
 .stars {
   min-width: 15px;
-  height: 30px; 
+  height: 30px;
   text-align: right;
 }
 .stars span {
-
+  font-size: 16px;
   color: #81b3d2;
 }
 .rating {
@@ -1081,7 +1082,7 @@ span.active-arrow {
 }
 .rating-score {
   margin-top: 41px;
-  padding-top: 5px;
+  padding-top: 2px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
@@ -1096,15 +1097,22 @@ span.active-arrow {
 
 /*Animation*/
 @keyframes appear {
-  from {
-    opacity: 0;
+  0%   {
+    transform: translateY(500px);
   }
-  to {
-    opacity: 1;
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes disappear {
+  100% {
+    transform: translateY(500px);
+    display: none;
   }
 }
 .form-appear {
   display: block;
   animation-name: appear;
-  animation-duration: 2s;
+  animation-duration: 500ms;
+  animation-timing-function:linear;
 }
