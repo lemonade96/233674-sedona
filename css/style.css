@@ -176,7 +176,7 @@ a:active {
 }
 .main-nav li:nth-child(2) a {
   margin: 14px auto;
-  width: 78%;
+  width: 82%;
   text-align: left;
 }
 .main-nav li:nth-child(4) a {
@@ -778,7 +778,10 @@ iframe {
 .features-check {
   width: 20%;
   float: left;
-  margin-left: 5%;
+  margin-left: 46px;
+}
+.features-check:last-of-type {
+  margin-left: 86px;
 }
 input[type="checkbox"] {
   display: none;
