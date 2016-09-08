@@ -244,7 +244,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -349px -136px;
 }
@@ -257,7 +257,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -406px -136px;
 }
@@ -270,7 +270,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 10px;
   height: 19px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -20px -82px;
 }
@@ -283,7 +283,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -70px -82px;
 }
@@ -296,7 +296,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 20px;
   height: 16px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -349px -191px;
 }
@@ -309,7 +309,7 @@ footer {
           transform: translate(-50%, -50%);
   width: 20px;
   height: 16px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-repeat: no-repeat;
   background-position: -409px -191px;
 }
@@ -327,7 +327,7 @@ footer {
 .html-logo {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   width: 113px;
   height: 39px;
   background-position: -20px -192px;
@@ -335,7 +335,7 @@ footer {
 .html-logo:hover {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   width: 113px;
   height: 39px;
   background-position: -20px -273px;
@@ -343,7 +343,7 @@ footer {
 .html-logo:active{
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   width: 113px;
   height: 39px;
   background-position: -173px -194px;
@@ -495,7 +495,7 @@ footer {
   margin-left: -36px; 
   width: 75px;
   height: 72px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -234px -82px;
 }
 .food::before {
@@ -506,7 +506,7 @@ footer {
   margin-left: -36px; 
   width: 75px;
   height: 72px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -120px -82px;
 }
 .souvenirs::before {
@@ -517,7 +517,7 @@ footer {
   margin-left: -38px; 
   width: 64px;
   height: 76px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -349px -20px;
 }
 .search-header {
@@ -570,16 +570,19 @@ footer {
   padding: 54px;
   background-color: white;
   z-index: 5;
+  font-size: 0;
   box-shadow:  0px 5px 22px 1px #b5b9bc;
 }
 .searching-form input[type="text"] {
   background-color: #f2f2f2;
   outline: none;
+  font-size: 14px;
 }
 .searching-form label {
   display: inline-block;
   vertical-align: middle;
   width: auto;
+  font-size: 14px;
   font-weight: bold;
 }
 .full-width-input:first-child {
@@ -739,7 +742,7 @@ iframe {
   padding: 26px 0;
   padding-bottom: 20px;
   background-color: #263940;
-  background-image: url(../img/catalog/filter-background.jpg);
+  background-image: url("../img/catalog/filter-background.jpg");
   background-position: 0 35%;
   color: white;
 }
@@ -775,7 +778,7 @@ input[type="checkbox"] + label::before {
   left: 0;
   width: 22px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -203px -20px;  
 }
 input[type="checkbox"]:checked + label::before {
@@ -783,7 +786,7 @@ input[type="checkbox"]:checked + label::before {
   display: block;
   width: 26px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -265px -20px;
 }
 .check-blocked,
@@ -797,7 +800,7 @@ input[type="checkbox"]:checked + label.check-blocked::before {
   left: 0;
   width: 22px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -203px -20px;  
 }
 .filter-range {
