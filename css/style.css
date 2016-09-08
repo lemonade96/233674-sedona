@@ -166,21 +166,21 @@ a:active {
   font-weight: bold;
   line-height: 26px;
 }
-.main-nav li:first-child a {
+.nav-first {
   margin: 14px 0;
   text-align: left;
 }
-.main-nav li:nth-child(2) a {
+.nav-second {
   margin: 14px auto;
   width: 82%;
   text-align: left;
 }
-.main-nav li:nth-child(4) a {
+.nav-fourth {
   margin: 14px auto;
   width: 70%;
   text-align: right;
 }
-.main-nav li:last-child a {
+.nav-fifth {
   margin: 14px 0;
   text-align: right;
 }
@@ -413,19 +413,18 @@ footer {
 .index-image1 {
   float: right;
   width: 66.6%;
-  height: 255px;
-  background: url("../img/index/town-view.jpg") 0 -80px no-repeat;
+  min-height: 255px;
 }
 .index-image2 {
   float: left; 
   width: 66.6%;
-  height: 255px;
+  min-height: 255px;
   background: url("../img/index/devil-bridge.jpg") 0 -76px no-repeat;
 }
 .advantages {
   float: left;
   width: 33.4%;
-  height: 255px;
+  min-height: 255px;
 }
 .advantages h3 {
   margin: 0 auto;
@@ -441,6 +440,17 @@ footer {
   margin-right: auto;
   width: 65px;
   text-align: center;
+}
+.advantages-section1 {
+  min-height: 255px;
+  background-color: #81b3d2;
+}
+.advantages-section2 {
+  min-height: 255px;
+  background-color: #eeeeee;
+}
+.stuff-section {
+  min-height: 332px;
 }
 .advantages p {
   margin-left: auto;
@@ -474,7 +484,7 @@ footer {
   float: left;
   box-sizing: border-box;
   width: 33.3%;
-  height: 332px;
+  height:inherit; 
   text-align: center;
   background-color: white; 
 }
@@ -738,7 +748,7 @@ iframe {
 .hotel-filter {
   margin-bottom: 33px;
   width: 100%;
-  height: 170px;
+  min-height: 170px;
   padding: 26px 0;
   padding-bottom: 20px;
   background-color: #263940;
@@ -822,6 +832,7 @@ input[type="checkbox"]:checked + label.check-blocked::before {
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  font-size: 0;
 }
 .price-controls label {
   font-size: 14px;
