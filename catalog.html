@@ -10,50 +10,53 @@
   <body>
     <div class="shadow">
       <header class="main-header clearfix">
-      <div class="container">
-      <nav class="main-nav clearfix">
-      <ul class="clearfix">
-      <li>
-      <a href="index.html">Информация</a>
-      </li>
-      <li>
-      <a href="#">Фото и видео</a>
-      </li>
-      <li>
-      <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="138" height="70"></a>
-      </li>
-      <li>
-      <a href="#">Карта штата</a>
-      </li>
-      <li>
-      <a class="active">Гостиницы</a>
-      </li>
-      </ul>
-      </nav>
-      </div>
+        <div class="container">
+          <nav class="main-nav clearfix">
+            <ul class="clearfix">
+              <li>
+                <a class="nav-first" href="index.html">Информация</a>
+              </li>
+              <li>
+                <a class="nav-second" href="#">Фото и видео</a>
+              </li>
+              <li>
+                <a class="index-logo" href="index.html"><img class="index-logo" src="img/for-all/header-logo.png" alt="логотип" width="138" height="70"></a>
+              </li>
+              <li>
+                <a class="nav-fourth" href="#">Карта штата</a>
+              </li>
+              <li>
+                <a class="nav-fifth active">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main class="container catalog-main">
         <section class="hotel-filter clearfix">
           <form class="catalog-form clearfix" action="#" method="post">
             <section class="features-check">
-            <span>Инфраструктура:</span> 
+              <span>Инфраструктура:</span> 
               <input class="checkbox" id="pool" type="checkbox" name="pool"  checked><label for="pool">Бассейн</label>
               <input class="checkbox" id="parking" type="checkbox" name="parking"><label class="check-blocked" for="parking">Парковка</label>
               <input class="checkbox" id="wifi" type="checkbox" name="wifi"><label class="check-blocked" for="wifi">Wi-Fi</label>
             </section>
             <section class="features-check">
-            <span>Тип жилья:</span>
-              <input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked><label for="hotel">Гостиница</label>
-              <input class="checkbox" id="motel"  type="checkbox" name="motel" checked><label for="motel">Мотель</label>
-              <input class="checkbox" id="apartament" type="checkbox" name="apartament" ><label class="check-blocked" for="apartament">Апартаменты</label>
+              <span>Тип жилья:</span>
+              <input class="checkbox" id="hotel"  type="checkbox" name="hotel" checked>
+              <label for="hotel">Гостиница</label>
+              <input class="checkbox" id="motel"  type="checkbox" name="motel" checked>
+              <label for="motel">Мотель</label>
+              <input class="checkbox" id="apartament" type="checkbox" name="apartament" >
+              <label class="check-blocked" for="apartament">Апартаменты</label>
             </section>
 
             <section class="filter-range">
               <div class="filter-range-title">Стоимость в сутки (р):</div>
               <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label><!--
-              --><label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
@@ -62,7 +65,7 @@
                 <div class="range-toggle range-toggle-min"></div>
                 <div class="range-toggle range-toggle-max"></div>
               </div>
-            <button class="btn-transparent" type="submit">Показать</button>
+              <button class="btn-transparent" type="submit">Показать</button>
             </section>
           </form>
         </section>
@@ -73,9 +76,7 @@
           <span class="was-found">3</span>
         </section>
         <div class="selection">
-          <span>
-          Сортировка:
-          </span>
+          <span>Сортировка:</span>
           <a class="select-active" href="#">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по рейтингу</a>
