@@ -1,4 +1,5 @@
 /*General*/
+
 * {
   margin: 0;
   border: 0;
@@ -6,7 +7,7 @@
 }
 body {
   position: relative;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -55,14 +56,12 @@ a {
   text-decoration: none;
   color: black;
 }
-
 a:hover {
   color: #81b3d2;
 }
 a:active {
   color: #b2b2b2;
 }
-
 .active {
   color: #7f6d62;
 }
@@ -73,23 +72,19 @@ a:active {
   color: #d8d3d0;
 }
 
-
 /*Buttons*/
+
 .btn,
 .btn:hover {
   display: block;
   text-align: center;
   color: white;
 }
-
 .blue-btn {
-
   background-color: #81b3d2;
-  
 }
 .blue-btn:hover {
   background-color: #669ec0;
- 
 }
 .blue-btn:active {
   background-color: #5496bd;
@@ -105,7 +100,9 @@ a:active {
   background-color: #503e33;
   color: #766860;
 }
+
 /*Icons*/
+
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -147,6 +144,7 @@ a:active {
 .icon-youtube::before { content: "\f39e"; } /* "" */
 
 /*Header*/
+
 .main-header {
   margin-top: 0;
   height: 56px;
@@ -158,13 +156,11 @@ a:active {
   padding-left: 6%;
   padding-right: 6%;
 }
-
 .main-nav li{
   float: left;
   width: 20%;
   padding: 0;
 }
-
 .main-nav a { 
   display: block;
   font-weight: bold;
@@ -188,7 +184,6 @@ a:active {
   margin: 14px 0;
   text-align: right;
 }
-
 a.index-logo {
   margin-top: 0;
   margin-left: auto;
@@ -207,7 +202,6 @@ footer {
   text-align: center;
   background-color: #ffffff;
 }
-
 .index-footer {
   position: absolute;
   bottom: 0;
@@ -217,7 +211,6 @@ footer {
   background-color: #ffffff;
   opacity: 0.8;
 }
-
 .footer-hashtag {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -226,7 +219,6 @@ footer {
   font-weight: bold;
   width: 33.333%;
   height: auto;
-  
 }
 .footer-social {
   float: left;
@@ -234,7 +226,6 @@ footer {
   margin-bottom: 50px;
   width: 33.333%;
   height: auto;
-  
 }
 .social-btn {
   position: relative;
@@ -244,26 +235,26 @@ footer {
   height: 45px;
   background-color: #81b3d2;
 }
-
 .twitter::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
   background-image: url(../img/for-all/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -349px -136px;
 }
-
 .twitter:active::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
   background-image: url(../img/for-all/spritesheet.png);
@@ -275,7 +266,8 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 10px;
   height: 19px;
   background-image: url(../img/for-all/spritesheet.png);
@@ -287,7 +279,8 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 17px;
   height: 15px;
   background-image: url(../img/for-all/spritesheet.png);
@@ -299,7 +292,8 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 20px;
   height: 16px;
   background-image: url(../img/for-all/spritesheet.png);
@@ -311,7 +305,8 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 20px;
   height: 16px;
   background-image: url(../img/for-all/spritesheet.png);
@@ -355,13 +350,14 @@ footer {
 }
 
 /*Index*/
+
 .welcome-image {
   min-width: 768px;
   max-width: 1200px;
   height: 508px;
   background-color: #32424c;
   background:
-    url(../img/index/head-image.jpg) 0 -56px no-repeat;
+    url("../img/index/head-image.jpg") 0 -56px no-repeat;
   margin-bottom: 59px;
   border-top: 1px solid transparent;
 }
@@ -376,7 +372,6 @@ footer {
   width: 188px;
   height: 45px;
 }
-
 .georgeous {
   margin-left: auto;
   margin-right: auto;
@@ -415,26 +410,23 @@ footer {
   width: 500px;
   line-height: 25px;
 }
-
 .index-image1 {
   float: right;
   width: 66.6%;
   height: 255px;
-  background: url(../img/index/town-view.jpg) 0 -80px no-repeat;
+  background: url("../img/index/town-view.jpg") 0 -80px no-repeat;
 }
 .index-image2 {
   float: left; 
   width: 66.6%;
   height: 255px;
-  background: url(../img/index/devil-bridge.jpg) 0 -76px no-repeat;
+  background: url("../img/index/devil-bridge.jpg") 0 -76px no-repeat;
 }
-
 .advantages {
   float: left;
   width: 33.4%;
   height: 255px;
 }
-
 .advantages h3 {
   margin: 0 auto;
   margin-top: 53px;
@@ -450,13 +442,11 @@ footer {
   width: 65px;
   text-align: center;
 }
-
 .advantages p {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  text-align: center;
-  
+  text-align: center; 
 }
 .advantages-1 { 
   background-color: #81b3d2;
@@ -479,7 +469,6 @@ footer {
 .stuff p {
   color: rgba(0, 0, 0, 0.5);
 }
-
 .stuff {
   position: relative;
   float: left;
@@ -487,10 +476,8 @@ footer {
   width: 33.3%;
   height: 332px;
   text-align: center;
-  background-color: white;
-  
+  background-color: white; 
 }
-
 .stuff h3 {
   margin: 26px auto;
   margin-top: 160px;
@@ -500,7 +487,6 @@ footer {
   margin: 0 auto;
   width: 75%;
 }
-
 .house::before {
   content: "";
   position: absolute;
@@ -534,8 +520,6 @@ footer {
   background-image: url(../img/for-all/spritesheet.png);
   background-position: -349px -20px;
 }
-
-
 .search-header {
   width: 100%;
   height: 232px;
@@ -566,19 +550,18 @@ footer {
   background-color: #766357;
   color: #ffffff;
 }
-
 .search {
   position: relative;
   z-index: 1;
   width: 100%;
   height: 590px;
 }
-
 .searching-form { 
   position: absolute;
   top: -85px;
   left: 50%;
-  transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
   width: 570px;
   height: 480px;
 }
@@ -599,7 +582,6 @@ footer {
   width: auto;
   font-weight: bold;
 }
-
 .full-width-input:first-child {
   position: relative;
   margin-left: 4px;
@@ -633,21 +615,17 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
-
-
 .half-width-input input {
   display: inline-block;
   vertical-align: middle;
   width: 39px;
   height: 35px;
   text-align: center;
-  background-color: #f2f2f2;
-  
+  background-color: #f2f2f2;  
 }
 .label-adults {
   margin-right: 45px;
 }
-
 .label-children {
     margin-left: 52px;
     margin-right: 30px;
@@ -668,16 +646,17 @@ footer {
   left: 50%;
   width: 12px;
   height: 3px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -173px -273px;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 .minus:hover {
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -277px -273px;
 }
 .minus:active{
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -225px -273px;
 }
 
@@ -687,19 +666,19 @@ footer {
   left: 50%;
   width: 11px;
   height: 11px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -173px -316px;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 .plus:hover{
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -275px -316px;
 }
 .plus:active{
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -224px -316px;
 }
-
 .index-submit {
   display: block;
   background-color: #81b3d2;
@@ -714,7 +693,6 @@ footer {
   margin-right: auto;
   margin-top: 56px;  
 }
-
 label.calendar {
   position: absolute;
   top: 7px;
@@ -722,37 +700,37 @@ label.calendar {
   display: inline-block;
   width: 21px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -20px -20px;
 }
 .calendar:hover {
   display: inline-block;
   width: 21px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -142px -20px;
 }
 .calendar:active {
   display: inline-block;
   width: 21px;
   height: 22px;
-  background-image: url(../img/for-all/spritesheet.png);
+  background-image: url("../img/for-all/spritesheet.png");
   background-position: -81px -20px;
 }
 .map {
   position: relative;
   width: 100%;
   height: 600px;
-
+  background-image: url("../img/index/map.jpg");
+  background-repeat: no-repeat;
+  background-color: #D1E231;
 }
 iframe {
   width: 100%;
   height: 600px;
 }
 
-
 /*Catalog*/
-
 
 .hotel-filter {
   margin-bottom: 33px;
@@ -764,9 +742,7 @@ iframe {
   background-image: url(../img/catalog/filter-background.jpg);
   background-position: 0 35%;
   color: white;
-
 }
-
 .hotel-filter span {
   font-weight: bold;
   font-size: 16px;
@@ -774,7 +750,6 @@ iframe {
 .catalog-form {
   width: 100%;
 }
-
 .features-check {
   width: 20%;
   float: left;
@@ -832,14 +807,12 @@ input[type="checkbox"]:checked + label.check-blocked::before {
   color: #ffffff;
   text-transform: uppercase;
 }
-
 .filter-range-title {
   margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
-
 .price-controls {
   position: relative;
   height: 36px;
@@ -847,15 +820,12 @@ input[type="checkbox"]:checked + label.check-blocked::before {
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
-
 .price-controls label {
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
-
 .price-controls .min-price {  
   float: left;
   min-width: 65px;
@@ -872,10 +842,8 @@ input[type="checkbox"]:checked + label.check-blocked::before {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
   outline: none;
@@ -885,80 +853,63 @@ input[type="checkbox"]:checked + label.check-blocked::before {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
-
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
-
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
-
 .range-toggle {
   position: absolute;
   top: -9px;
-
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
-
 .range-toggle:hover {
   background: #1c4f80;
 }
-
 .range-toggle-min {
   left: 0;
 }
-
 .range-toggle-max {
   left: 80%;
 }
-
 .btn-transparent {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
   cursor: pointer;
 }
-
 .btn-transparent:hover {
   color: #000000;
   background: #ffffff;
 }  
-
 label {
   vertical-align: top;
 }
@@ -980,7 +931,6 @@ label {
   float: left;
   vertical-align: baseline;
 }
-
 .number-of span {
   font-size: 21px;
   font-weight: bold;
@@ -994,7 +944,6 @@ label {
   margin-right: 35px;
   font-size: 12px;
 }
-
 .selection a {
   margin-right: 30px;
   border-bottom: 1px dashed #81b3d2;
@@ -1035,7 +984,6 @@ span.active-arrow {
   width: 130px;
   height: 90px;
 }
-
 .catalog-item-info {
   float: left;
   margin-left: 34px;
@@ -1061,8 +1009,7 @@ span.active-arrow {
   padding-top: 3px;
   width: 110px;
   height: 22px;
-  
-}
+  }
 .book-btn {
   float: right;
   margin-left: 7px;
@@ -1070,7 +1017,6 @@ span.active-arrow {
   width: 145px;
   height: 23px;
 }
-
 .stars {
   min-width: 15px;
   height: 30px;
@@ -1099,23 +1045,47 @@ span.active-arrow {
 }
 
 /*Animation*/
-@keyframes appear {
+
+@-webkit-keyframes appear {
   0%   {
-    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes appear {
+  0%   {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes disappear {
+  100% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+    display: none;
   }
 }
 @keyframes disappear {
   100% {
-    transform: translateY(500px);
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
     display: none;
   }
 }
 .form-appear {
   display: block;
-  animation-name: appear;
-  animation-duration: 500ms;
-  animation-timing-function:linear;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function:linear;
+          animation-timing-function:linear;
 }
